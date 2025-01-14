@@ -24,7 +24,7 @@
     "autoprefixer": "9.6.0",
     "postcss": "7.0.17",
     "build:style": "tailwind build src/styles/index.pcss -c tailwind.js -o src/styles/tailwind-pre-build.css",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && npm run build && react-scripts start",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

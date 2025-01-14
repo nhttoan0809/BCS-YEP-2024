@@ -1,0 +1,28 @@
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  column-gap: 16px;
+  row-gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .example {
+    gap: 1.75rem;
+  }
+}
+
+.image--main {
+}

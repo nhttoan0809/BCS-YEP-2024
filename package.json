@@ -1,0 +1,30 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React example starter project",
+  "keywords": ["react", "starter"],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.0.1",
+    "firebase": "11.1.0",
+    "firebase-functions": "6.2.0",
+    "firebase-admin": "13.0.2",
+    "async_hooks": "1.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "1.0.4"
+  },
+  "scripts": {
+    "autoprefixer": "9.6.0",
+    "postcss": "7.0.17",
+    "build:style": "tailwind build src/styles/index.pcss -c tailwind.js -o src/styles/tailwind-pre-build.css",
+    "start": "npm run build:style && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+}

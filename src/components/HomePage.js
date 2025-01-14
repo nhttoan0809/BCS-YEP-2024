@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
 import { IMAGE_NAMES } from "../constant";
 import { getData } from "../db/actions";
-import HomeBG from "../images/bg2.png";
 
 const Gifts = () => {
   const [gifts, setGifts] = useState(() =>
@@ -43,7 +42,7 @@ const Gifts = () => {
         >
           <img
             src={gift.image_url}
-            alt="image"
+            alt="gift"
             className="image--main w-[90px] sm:w-[100px] md:w-[120px] lg:w-[135px]"
           />
 

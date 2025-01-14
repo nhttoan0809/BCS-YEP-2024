@@ -31,6 +31,7 @@ const Gifts = () => {
     const unsubscribe = getData(handleAddedUser);
 
     return () => unsubscribe();
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -1,6 +1,8 @@
 # BCS Year End Party Gift Randomizer 🎉
 
-![BCS YEP](BCS-YEP-Image.png)
+![BCS YEP](BCS-YEP-Main.png)
+![BCS YEP](BCS-YEP-QR.png)
+![BCS YEP](BCS-YEP-Form.png)
 
 ## Overview
 
@@ -36,4 +38,4 @@ This project was created by a volunteer team of former colleagues, aiming to sha
 
 ---
 
-*Enjoy the party and may luck bring you the best gift!*
+_Enjoy the party and may luck bring you the best gift!_

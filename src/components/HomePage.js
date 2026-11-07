@@ -6,7 +6,7 @@ import { getData } from "../db/actions";
 const Gifts = () => {
   const [gifts, setGifts] = useState(() =>
     IMAGE_NAMES.map((image) => ({
-      image_url: `/images/${image}.png`,
+      image_url: `${process.env.PUBLIC_URL}/images/${image}.png`,
       imageId: image,
       name: "?",
     }))

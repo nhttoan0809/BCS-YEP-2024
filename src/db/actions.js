@@ -12,16 +12,22 @@ const getData = (onAddUser) => {
   const usersCollection = collection(db, "users");
 
   // Đăng ký listener để theo dõi thay đổi dữ liệu
-  const unsubscribe = onSnapshot(usersCollection, (querySnapshot) => {
-    console.log("Listener: Add an user!!!");
-    if (querySnapshot.empty) {
-      onAddUser([]);
-      return;
-    }
+  const unsubscribe = onSnapshot(
+    usersCollection,
+    (querySnapshot) => {
+      console.log("Listener: Add an user!!!");
+      if (querySnapshot.empty) {
+        onAddUser([]);
+        return;
+      }
 
-    const users = querySnapshot.docs.map((doc) => doc.data());
-    onAddUser(users);
-  });
+      const users = querySnapshot.docs.map((doc) => doc.data());
+      onAddUser(users);
+    },
+    (error) => {
+      console.warn("Firestore listener warning:", error.message);
+    }
+  );
 
   // Trả về hàm `unsubscribe` để ngắt kết nối khi không cần thiết
   return unsubscribe;
